@@ -1,0 +1,43 @@
+body, h2{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin 0;
+  padding: 0;
+}
+header {
+  color: white;
+  background-color: rgb(67, 67, 136);
+  padding: 20px 10px;
+  font-weight: bold;
+  margin:0;
+
+}
+nav {
+  padding: 20px 10px;
+}
+nav div p {
+  color: blue;
+  text-align: left;
+}
+nav ul {
+  display: inline;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+
+  
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+nav ul li a:active {
+  color: blue;
+}
