@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>Enter Your Details:</h3>
+    <hr />
+    <form action="" method="post" enctype="multipart/form-data">
+      <label>Name:</label>
+      <input type="name" id="name" name="name" required />
+      <br /><br />
+      <label>Enter D.O.B:</label>
+      <input type="date" id="date" name="date" />
+      <br /><br />
+      <label>Choose your gender</label>
+      <input type="radio" name="gender" value="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br /><br />
+
+      <label>Choose your Country:</label>
+      <select name="country" id="country">
+        <option value="">Choose Your Country</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Uganda">Uganda</option>
+        <option value="zambia">Zambia</option>
+        <option value="nigeria">Nigeria</option>
+      </select>
+      <br><br>
+      <label for="address">Adress: </label>
+      <input type="text" id="address" name="address" required />
+      <label for="city">City: </label>
+      <input type="text" id="city" name="city" />
+      <br /><br />
+      <label for="telephone">Telephone Number:</label>
+      <input
+        type="tel"
+        id="telephone"
+        name="telephone"
+        placeholder="0712345678"
+        required
+      />
+      <br /><br />
+      <label for="email">Enter Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="name@gmail.com"
+        required
+      />
+      <br /><br />
+      <label for="course">Enter your Course: </label>
+      <input type="text" id="course" name="course" placeholder="course" />
+      <br /><br />
+      <hr />
+      <input type="submit" value="REGISTER" id="register" />
+      <input type="reset" value="CANCEL" id="cancel" />
+    </form>
+  </body>
+</html>
