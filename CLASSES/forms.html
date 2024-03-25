@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="scripts/data.php"
+      method="post"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <label for="student_id">Name: </label>
+      <input type="text" name="student_name" id="student_name" />
+      <br />
+      <label for="email_address">Email: </label>
+      <input type="email" name="email_address" id="email_address" />
+      <br />
+      <textarea placeholder="halllo" name="bio" id="bio" rows="5" cols="35">
+    Please enter your bio here now
+  </textarea
+      >
+      <br />
+      <fieldset>
+        <legend>SUBJECTS::</legend>
+        <input
+          checked
+          type="checkbox"
+          name="subjects"
+          id="subjects"
+          value="Math"
+        />
+        <label for="math">Math</label>
+        <br />
+        <input type="checkbox" name="english" id="english" value="English" />
+        <label for="english">English</label>
+        <br />
+        <input type="checkbox" name="science" id="science" value="Science" />
+        <label for="science">Math</label>
+      </fieldset>
+      <!-- RADIO BUTTONS  -->
+      <fieldset>
+        <legend>GENDER</legend>
+        <input type="radio" name="gender" id="male" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female" />
+        <label for="male">Female</label>
+      </fieldset>
+      <label>Classes: </label>
+      <select  name="classes" id="classes" multiple>
+        <option value="Physical">Physical</option>
+        <option value="Virtual">Virtual</option>
+
+      </select>
+    </form>
+  </body>
+</html>

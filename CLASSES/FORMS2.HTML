@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- in the Action, that is where you put your script that will 
+      take the data from the form -->
+    <form action="processing.php" method="post" enctype="multipart/form-data">
+      <label for="name">Jina: </label>
+      <!-- required::: used to make sure the field is not left free -->
+      <input
+        type="text"
+        name="name"
+        id="name"
+        value=""
+        placeholder=""
+        required
+      />
+      <br />
+      <label for="email">E-MAIL:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="name@example.com"
+      />
+      <br /><br />
+      <label for="password"></label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Type your password"
+        name="password"
+      />
+      <br />
+      <!-- accepts specifies which document type you are accepting -->
+      <input type="file" accept=".pdf, .docx" />
+      <!-- FOR IMAGES&VIDEOS restrictions::: accept="image/*" , "video/*"-->
+      <input
+        type="search"
+        name="search"
+        id="search"
+        placeholder="search here"
+      />
+
+      <br />
+      <input type="checkbox" id="students" value="Are you saved" />
+      <label for="students">Are you saved</label>
+      <br />
+      <!-- DOING RADIO give the same identifier (NAME) -->
+      <input type="radio" id="" name="gender" value="MALE" />
+      <label for="male">Male</label>
+      <input type="radio" id="" name="gender" value="FEMALE" />
+      <label for="female">Female</label>
+      <br />
+      <label for="cars">Select a Car Model</label>
+      <select id="cars" name="cars">
+        <option value=""></option>
+        <option value="Toyota">Toyota</option>
+        <option value="Mitsubishi">Mitsubishi</option>
+        <option value="Mazda">Mazda</option>
+      </select>
+      <br />
+      <textarea id="bio" name="bio" rows="10" cols="25">
+        write your Bio here
+      </textarea>
+      <br />
+      <input type="submit" name="submit" id="submit" value="dataSub" />
+      <input type="reset" name="reset" id="reset" value="RESET" />
+    <input type="number" name="number" id="number" value="" max="100" >
+    </form>
+  </body>
+</html>
